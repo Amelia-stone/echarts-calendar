@@ -1,0 +1,24 @@
+{
+  "name": "echarts-calendar",
+  "version": "1.0.0",
+  "description": "ECharts calendar extension",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git"
+  },
+  "keywords": [
+    "Echarts",
+    "Calendar"
+  ],
+  "author": "dxh",
+  "license": "ISC",
+  "devDependencies": {
+    "echarts": "^3.3.2",
+    "webpack": "^1.13.3",
+    "zrender": "^3.2.2"
+  }
+}

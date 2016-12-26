@@ -23,6 +23,10 @@
 
 ```
 
+- code plugin
+
+- how to do [visite](./core.md)
+
 - create `webpack.config.js` file
 
 ```js

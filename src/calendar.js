@@ -3,7 +3,8 @@
  * @author dxh
  */
 
-var echarts = require('echarts');
+require('echarts');
 
-// to do
-console.log(1);
+require('./calendarSeries');
+require('./calendarView');
+

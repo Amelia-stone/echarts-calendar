@@ -12,10 +12,33 @@
     </style>
 </head>
 <body>
-    <div id='main'></div>
+    <div id='main' style="height: 400px; width: 1300px;"></div>
     <script>
-        // todo ...
-        console.log(2);
+        var data = [
+            ['2014-01-01', 1], ['2014-01-08', 3], ['2014-01-09', 5],
+            ['2014-03-07', 5], ['2014-03-08', 5], ['2014-03-09', 4],
+            ['2014-06-07', 2], ['2014-06-10', 3], ['2014-06-27', 5],
+            ['2014-07-07', 5], ['2014-07-17', 5], ['2014-07-19', 7],
+            ['2014-12-07', 1], ['2014-12-08', 3], ['2014-12-31', 5]
+        ];
+
+        var chart = echarts.init(document.getElementById('main'));
+            var option = {
+                title: {
+                    text: '日历图'
+                },
+                legend: {
+                    data: ['一级','二级', '三级', '四级']
+                },
+                tooltip: {
+                    position: 'top'
+                },
+                series: [{
+                    type: 'calendar',
+                    data: data
+                }]
+            };
+            chart.setOption(option);
     </script>
 </body>
 </html>

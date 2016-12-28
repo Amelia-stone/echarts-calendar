@@ -24,15 +24,6 @@
 
         var chart = echarts.init(document.getElementById('main'));
             var option = {
-                title: {
-                    text: '日历图'
-                },
-                legend: {
-                    data: ['一级','二级', '三级', '四级']
-                },
-                tooltip: {
-                    position: 'top'
-                },
                 series: [{
                     type: 'calendar',
                     data: data

@@ -3,33 +3,35 @@
 <head>
     <meta charset="UTF-8">
     <title>Echarts Calendar</title>
-    <script src='https://cdn.bootcss.com/echarts/3.2.2/echarts.simple.js'></script>
-    <script src='../dist/echarts-calendar.js'></script>
     <style>
-        html, body {
-            background-color: #ccc;
-        }
+    html,
+    body {
+        background-color: #ccc;
+    }
     </style>
 </head>
 <body>
-    <div id='main' style="height: 400px; width: 1300px;"></div>
+    <div id="main" style="height: 400px; width: 1300px;"></div>
+    <script src="https://cdn.bootcss.com/echarts/3.2.2/echarts.simple.js"></script>
+    <script src="../dist/echarts-calendar.js"></script>
     <script>
-        var data = [
-            ['2014-01-01', 1], ['2014-01-08', 3], ['2014-01-09', 5],
-            ['2014-03-07', 5], ['2014-03-08', 5], ['2014-03-09', 4],
-            ['2014-06-07', 2], ['2014-06-10', 3], ['2014-06-27', 5],
-            ['2014-07-07', 5], ['2014-07-17', 5], ['2014-07-19', 7],
-            ['2014-12-07', 1], ['2014-12-08', 3], ['2014-12-31', 5]
-        ];
+    var data = [
+        ['2014-01-01', 1], ['2014-01-08', 3], ['2014-01-09', 5],
+        ['2014-03-07', 5], ['2014-03-08', 5], ['2014-03-09', 4],
+        ['2014-06-07', 2], ['2014-06-10', 3], ['2014-06-27', 5],
+        ['2014-07-07', 5], ['2014-07-17', 5], ['2014-07-19', 7],
+        ['2014-12-07', 1], ['2014-12-08', 3], ['2014-12-31', 5]
+    ];
 
-        var chart = echarts.init(document.getElementById('main'));
-            var option = {
-                series: [{
-                    type: 'calendar',
-                    data: data
-                }]
-            };
-            chart.setOption(option);
+    /* global echarts */
+    var chart = echarts.init(document.getElementById('main'));
+    var option = {
+        series: [{
+            type: 'calendar',
+            data: data
+        }]
+    };
+    chart.setOption(option);
     </script>
 </body>
 </html>
